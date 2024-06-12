@@ -5,7 +5,8 @@ import { Container } from "./styles";
 export function TimerControls() {
   return (
     <Container>
-      <h1>TimerControls</h1>
+      <button>iniciar</button>
+      <button>zerar</button>
     </Container>
   );
 }
