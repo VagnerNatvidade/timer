@@ -2,10 +2,10 @@ import React from "react";
 
 import { Container } from "./styles";
 
-export function TimerDisplay() {
+export function TimerDisplay({ time }) {
   return (
     <Container>
-      <h1>00:00:00</h1>
+      <h1>{time}</h1>
     </Container>
   );
 }
