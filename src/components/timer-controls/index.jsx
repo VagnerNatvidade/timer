@@ -2,11 +2,11 @@ import React from "react";
 
 import { Container } from "./styles";
 
-export function TimerControls() {
+export function TimerControls({ onStart, onStop }) {
   return (
     <Container>
-      <button>Iniciar</button>
-      <button>Parar</button>
+      <button onClick={onStart}>Iniciar</button>
+      <button onClick={onStop}>Parar</button>
     </Container>
   );
 }
