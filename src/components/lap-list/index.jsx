@@ -2,13 +2,16 @@ import React from "react";
 
 import { Container } from "./styles";
 
-export function LapList() {
+export function LapList({ laps }) {
   return (
     <Container>
       <h3>Voltas</h3>
       <ul>
-        <li>volta 1: 01:05</li>
-        <li>volta 2: 02:05</li>
+        {laps.map((lap, index) => (
+          <li key={index}>
+            Volta {index + 1} - {lap}
+          </li>
+        ))}
       </ul>
     </Container>
   );

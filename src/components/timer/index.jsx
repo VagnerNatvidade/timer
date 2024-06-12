@@ -62,7 +62,7 @@ export function Timer() {
         onReset={resetTimer}
         lap={addLap}
       />
-      <LapList />
+      <LapList laps={laps} />
     </Container>
   );
 }
