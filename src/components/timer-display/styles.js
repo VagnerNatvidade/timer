@@ -8,4 +8,9 @@ export const Container = styled.div`
   border: 2px solid ${({ theme }) => theme.COLORS.GRAY_100};
   font-size: 4.8rem;
   background: ${({ theme }) => theme.COLORS.WHITE_100};
+
+  h1 {
+    display: grid;
+    grid-template-columns: 1fr max-content 1fr max-content 1fr;
+  }
 `;

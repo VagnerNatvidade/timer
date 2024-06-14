@@ -5,7 +5,7 @@ import { Container } from "./styles";
 export function LapList({ laps }) {
   return (
     <Container>
-      <h3>Voltas</h3>
+      {laps.length > 0 && <h3>Voltas</h3>}
       <ul>
         {laps.map((lap, index) => (
           <li key={index}>
