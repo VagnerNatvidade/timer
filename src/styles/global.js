@@ -14,5 +14,6 @@ export default createGlobalStyle`
   
   body {
     font-size: 1.6rem;
+    padding: 4rem;
   }
 `;
