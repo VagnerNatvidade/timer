@@ -13,9 +13,6 @@ export default createGlobalStyle`
   } 
   
   body {
-    display: grid;
-    place-content: center;
-    height: 100vh;
     font-size: 1.6rem;
   }
 `;

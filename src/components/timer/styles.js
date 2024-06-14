@@ -6,6 +6,7 @@ export const Container = styled.div`
   place-items: center;
   min-height: 50%;
   width: 400px;
+  margin: 4rem auto;
   color: ${({ theme }) => theme.COLORS.GRAY_300};
   background: ${({ theme }) => theme.COLORS.GRAY_100};
 `;
