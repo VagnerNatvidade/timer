@@ -1,21 +1,23 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  width: 100%;
+  width: 80%;
   text-align: center;
   margin: 2rem 0;
 
   ul {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: left;
     margin-top: 6px;
     list-style: none;
   }
 
   li {
-    border-bottom: 1px solid ${({ theme }) => theme.COLORS.GRAY_200};
+    width: 50%;
     padding: 0.8rem 1.6rem;
+    border-bottom: 1px solid ${({ theme }) => theme.COLORS.GRAY_200};
+    text-align: left;
   }
 
   ul li:nth-child(odd) {
