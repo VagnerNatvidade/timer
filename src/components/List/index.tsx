@@ -1,22 +1,8 @@
 import style from "./list.module.scss";
 import Item from "./Item";
+import { TasksProps } from "../../types/tasks";
 
-const List = () => {
-  const tasks = [
-    {
-      task: "React",
-      time: "02:00:00",
-    },
-    {
-      task: "Javascript",
-      time: "01:00:00",
-    },
-    {
-      task: "Typescript",
-      time: "03:00:00",
-    },
-  ];
-
+const List = ({ tasks }: { tasks: TasksProps[] }) => {
   return (
     <aside className={style.listaTarefas}>
       <h2>Estudos do dia</h2>

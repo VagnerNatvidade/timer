@@ -3,11 +3,18 @@ import style from "./style.module.scss";
 
 interface ButtonProps {
   title: string;
+  type?: "button" | "submit" | "reset" | undefined;
 }
 
 class Button extends React.Component<ButtonProps> {
   render() {
-    return <button className={style.botao}>{this.props.title}</button>;
+    const { type = "button" } = this.props;
+
+    return (
+      <button type={type} className={style.botao}>
+        {this.props.title}
+      </button>
+    );
   }
 }
 
