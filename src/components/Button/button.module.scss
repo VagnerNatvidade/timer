@@ -1,0 +1,27 @@
+.button {
+  width: 15rem;
+  align-self: center;
+  padding: 1.6rem;
+  border-radius: 1rem;
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: inherit;
+  background-color: #041c32;
+  box-shadow: 0rem 0.4rem 1rem hsla(209, 85%, 11%, 0.5);
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  &:active {
+    background-color: #ecb365;
+    box-shadow: 0rem 0.4rem 1rem hsla(209, 85%, 11%, 0.5);
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .button {
+    width: 20rem;
+    justify-self: center;
+  }
+}

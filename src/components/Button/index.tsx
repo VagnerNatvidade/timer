@@ -1,5 +1,4 @@
-import React from "react";
-import style from "./style.module.scss";
+import style from "./button.module.scss";
 
 interface ButtonProps {
   title: string;
@@ -7,16 +6,12 @@ interface ButtonProps {
   onClick?: () => void;
 }
 
-class Button extends React.Component<ButtonProps> {
-  render() {
-    const { type = "button", onClick } = this.props;
-
-    return (
-      <button onClick={onClick} type={type} className={style.botao}>
-        {this.props.title}
-      </button>
-    );
-  }
-}
+const Button = ({ title, type, onClick }: ButtonProps) => {
+  return (
+    <button onClick={onClick} type={type} className={style.button}>
+      {title}
+    </button>
+  );
+};
 
 export default Button;

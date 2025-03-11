@@ -30,12 +30,13 @@ const Stopwatch = ({ selected, finishTask }: StopwatchProps) => {
   }, [selected]);
 
   return (
-    <div className={style.cronometro}>
-      <p className={style.titulo}>Escolha um card e inicie o relógio.</p>
-      <div className={style.relogioWrapper}>
+    <div className={style.timer}>
+      <p className={style.title}>Escolha um card e inicie o relógio.</p>
+      <div className={style.watchWrapper}>
         <Watch time={time} />
       </div>
-      <Button title="Comerçar" onClick={() => countdown(time)} />
+
+      <Button title="Comerçar" type="button" onClick={() => countdown(time)} />
     </div>
   );
 };

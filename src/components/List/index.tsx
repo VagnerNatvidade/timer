@@ -9,7 +9,7 @@ interface ListProps {
 
 const List = ({ tasks, selectTask }: ListProps) => {
   return (
-    <aside className={style.listaTarefas}>
+    <aside className={style.taskList}>
       <h2>Estudos do dia</h2>
       <ul>
         {tasks.map((task) => (

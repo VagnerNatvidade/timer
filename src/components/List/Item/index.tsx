@@ -15,15 +15,17 @@ const Item = ({
 }: ItemProps) => {
   return (
     <li
-      className={`${style.item} ${
-        selected ? style.itemSelecionado : style.item
-      } ${complete === true ? style.itemCompletado : style.item}`}
-      onClick={() => !complete && selectTask({ task, time, selected, complete, id })}
+      className={`${style.item} ${selected ? style.itemSelected : style.item} ${
+        complete === true ? style.itemComplete : style.item
+      }`}
+      onClick={() =>
+        !complete && selectTask({ task, time, selected, complete, id })
+      }
     >
       <h3>{task}</h3>
       <span>{time}</span>
       {complete && (
-        <span className={style.concluido} aria-label="Tarefa completa">
+        <span className={style.finished} aria-label="Tarefa completa">
           {" "}
         </span>
       )}

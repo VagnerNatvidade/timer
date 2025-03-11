@@ -1,14 +1,14 @@
-.listaTarefas {
-  grid-area: tarefas;
+.taskList {
+  grid-area: taskList;
   height: 100%;
 
   h2 {
     font-size: 1.25rem;
-    margin-bottom: 12px;
+    margin-bottom: 1.2rem;
   }
 
   ul {
-    max-height: 350px;
+    max-height: 35rem;
     overflow-y: scroll;
     scrollbar-width: thin;
   }
@@ -17,12 +17,12 @@
     h2 {
       text-align: center;
       font-size: 2.25rem;
-      margin-bottom: 24px;
+      margin-bottom: 2.4rem;
     }
 
     ul {
       overflow: auto;
-      max-height: 500px;
+      max-height: 50rem;
     }
   }
 }
