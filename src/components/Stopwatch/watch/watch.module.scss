@@ -1,21 +1,19 @@
 .watchNum {
   flex: 1;
-  margin: 0 .4rem;
+  margin: 0 0.4rem;
   font-size: 4rem;
   text-align: center;
   padding: 0.8rem 0.4rem;
-  border-radius: 1rem;
-  background-color: #041c32;
-
-  @media screen and (min-width: 1280px) {
-  }
+  border-radius: 0.8rem;
+  background-color: #efefef;
 }
 
 .watchDivide {
   align-self: center;
   font-size: 4rem;
+  color: #efefef;
 
   @media screen and (min-width: 1280px) {
-    height: 12.6rem;
+    max-height: 12.6rem;
   }
 }

@@ -3,26 +3,25 @@
   height: 100%;
 
   h2 {
-    font-size: 1.25rem;
+    font-size: 1.2rem;
     margin-bottom: 1.2rem;
   }
 
   ul {
     max-height: 35rem;
-    overflow-y: scroll;
     scrollbar-width: thin;
+    overflow-y: scroll;
   }
 
   @media screen and (min-width: 1280px) {
     h2 {
       text-align: center;
-      font-size: 2.25rem;
-      margin-bottom: 2.4rem;
+      font-size: 2.4rem;
     }
 
     ul {
       overflow: auto;
-      max-height: 50rem;
+      max-height: 36rem;
     }
   }
 }

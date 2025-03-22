@@ -4,30 +4,29 @@
   grid-area: newTask;
   padding: 1.2rem;
   border-radius: 1rem;
-  background-color: #064663;
+  background-color: #efefef;
   box-shadow: 0rem 0.4rem 1rem hsla(209, 85%, 11%, 0.5);
 
   .inputContainer {
     display: flex;
     flex-direction: column;
     width: 100%;
-    margin-bottom: 1.6rem;
+    margin-bottom: 1.2rem;
 
     label {
       margin-bottom: 0.8rem;
-      font-size: 1.25rem;
+      font-size: 1.2rem;
     }
 
     input {
       width: 100%;
-      padding: 0.8rem 1.2rem 0.4rem;
-      box-sizing: border-box;
-      border: unset;
-      border-radius: 0.5rem;
-      background-color: #041c32;
+      padding: 0.8rem 1.2rem;
+      border: none;
+      border-radius: 0.4rem;
 
       &::placeholder {
-        color: #ababab;
+        font-size: 1.2rem;
+        color: #041c32;
       }
     }
   }
@@ -48,13 +47,17 @@
       }
 
       label {
-        font-size: 2rem;
+        font-size: 1.6rem;
       }
 
       input {
         height: 100%;
         font-size: 1.75rem;
       }
+    }
+
+    button {
+      font-size: 1.6rem;
     }
   }
 }

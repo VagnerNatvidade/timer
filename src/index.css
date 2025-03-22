@@ -14,14 +14,16 @@ body * {
   font-size: 1.6rem;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  color: #efefef;
+  color: #041c32;
 }
 
 body {
+  display: grid;
+  place-content: center;
   height: 100%;
   width: 100%;
-  padding: 1.6rem;
-  background-color: #efefef;
+  padding: 1rem;
+  background: #efefef;
 }
 
 ol,
@@ -30,7 +32,6 @@ ul {
 }
 
 input {
-  font-size: 1.2rem;
   font-family: inherit;
   color: inherit;
 }
@@ -39,4 +40,11 @@ button {
   border: none;
   font-family: inherit;
   font-weight: inherit;
+}
+
+@media screen and (min-width: 1280px) {
+  body {
+    padding: 1.6rem;
+    height: 100%;
+  }
 }

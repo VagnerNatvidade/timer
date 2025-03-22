@@ -4,22 +4,16 @@
     "newTask"
     "timer"
     "taskList";
-  row-gap: 2.4rem;
-  min-width: 32rem;
-  min-height: calc(100vh - 3.2rem);
-  padding: 3.2rem;
+  gap: 2.4rem;
   border-radius: 1rem;
-  background-color: #041c32;
 
   @media screen and (min-width: 1280px) {
     grid-template-areas:
       "newTask taskList"
       "timer taskList";
-    column-gap: 6.4rem;
-    grid-template-rows: min-content min-content;
+    grid-template-rows: max-content max-content;
     grid-template-columns: 70% 30%;
     justify-content: center;
     align-content: center;
-    padding: 6.4rem;
   }
 }
